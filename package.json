@@ -1,0 +1,20 @@
+{
+  "name": "idea-capture",
+  "version": "1.0.0",
+  "description": "Desktop quick idea capture app built with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "notes",
+    "productivity",
+    "idea-capture"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^30.0.9"
+  }
+}

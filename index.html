@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Idea Capture</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-card capture-shell" id="captureRoot">
+    <header class="top-row">
+      <h1>Quick Idea Capture</h1>
+      <label class="toggle-row" for="darkModeToggle">
+        <span>Dark</span>
+        <input id="darkModeToggle" type="checkbox" aria-label="Toggle dark mode" />
+      </label>
+    </header>
+
+    <section class="counter-row">
+      <span id="dailyCountLabel">Ideas today: 0</span>
+    </section>
+
+    <section class="input-row">
+      <textarea id="ideaInput" placeholder="Type your idea... (Enter to save, Esc to close)"></textarea>
+    </section>
+
+    <footer class="bottom-row">
+      <button id="saveBtn" class="primary">Save Idea</button>
+      <button id="historyBtn">View History</button>
+      <span id="statusText" class="status-text" aria-live="polite"></span>
+    </footer>
+  </main>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
