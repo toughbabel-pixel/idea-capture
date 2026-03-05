@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Idea History</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="history-shell" id="historyRoot">
+    <header class="history-header">
+      <h1>Idea History</h1>
+      <div class="history-actions">
+        <input id="searchInput" type="search" placeholder="Search ideas or tags..." />
+        <button id="exportBtn">Export Markdown</button>
+        <label class="toggle-row" for="darkModeToggleHistory">
+          <span>Dark</span>
+          <input id="darkModeToggleHistory" type="checkbox" aria-label="Toggle dark mode" />
+        </label>
+      </div>
+    </header>
+
+    <section>
+      <ul id="historyList" class="history-list"></ul>
+      <p id="emptyState" class="empty-state">No ideas saved yet.</p>
+    </section>
+  </main>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
